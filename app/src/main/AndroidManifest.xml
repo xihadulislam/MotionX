@@ -13,9 +13,8 @@
         android:theme="@style/Theme.MotionX"
         tools:targetApi="31">
         <activity
-            android:name=".step_to_follow.OnClickMotionActivity"
+            android:name=".splash.TwitterSplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,9 +26,16 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".step_to_follow.OnClickMotionActivity"
             android:exported="true">
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
