@@ -7,10 +7,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.constraintlayout.motion.widget.MotionLayout
 import com.xihadulislam.motionx.MainActivity
-import com.xihadulislam.motionx.R
 import com.xihadulislam.motionx.databinding.ActivityTwitterSplashBinding
 
-class TwitterSplashActivity : AppCompatActivity() {
+class TwitterSpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityTwitterSplashBinding
 
@@ -22,7 +21,7 @@ class TwitterSplashActivity : AppCompatActivity() {
 
         binding.motionLayout.setTransitionListener(object : MotionLayout.TransitionListener {
             override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-                startActivity(Intent(this@TwitterSplashActivity, MainActivity::class.java))
+                startActivity(Intent(this@TwitterSpActivity, MainActivity::class.java))
             }
 
             override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {}
